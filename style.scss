@@ -1,16 +1,36 @@
+$text-align: center;
+
 body {
   font-family: 'Nunito', sans-serif;
 }
 
-h1 {
-  text-align: center;
-  font-size: 200%;
-}
+.hero {
+  h1 {
+    text-align: $text-align;
+    font-size: 200%;
+  }
 
-h2 {
-  text-align: center;
-  font-weight: 100;
-  font-size: 110%;
+  h2 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 110%;
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+
+  }
+  h3 {
+    text-align: $text-align;
+    font-size: 35px;
+  }
+
+  p {
+    text-align: $text-align;
+    margin: 0 auto;
+    width: 440px;
+  }
 }
 
 nav {
@@ -35,18 +55,56 @@ nav {
       width: 8em;
       text-align: center;
       display: inline-block;
+      cursor: pointer;
     }
   }
 }
 
-.signup-form form input[type=submit] {
-  border: none;
-  background-color: blue;
-  text-decoration: none !important;
-  color: white;
-  padding: 0.5em;
-  border-radius: 6px;
-  width: 8em;
-  text-align: center;
+.signup-form {
   display: inline-block;
+  form {
+  .name {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin: 5px;
+      border: 2px solid lightgray;
+
+    }
+  }
+  .contact {
+  input {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 2px solid lightgray;
+  }
+}
+}
+  form input[type=submit] {
+    border-width: 2px;
+    border-color: purple;
+    background-color: white;
+    color: purple;
+    text-decoration: none !important;
+    padding: 0.5em;
+    border-radius: 6px;
+    width: 6em;
+    text-align: $text-align;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+   }
+}
+.contact {
+  input {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+  }
 }
