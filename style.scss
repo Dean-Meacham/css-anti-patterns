@@ -4,6 +4,18 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+h3 {
+  text-align: $text-align;
+  font-size: 35px;
+}
+
+p {
+  text-align: $text-align;
+  margin: 0 auto;
+  width: 440px;
+  margin-bottom: 20px;
+}
+
 .hero {
   h1 {
     text-align: $text-align;
@@ -20,16 +32,6 @@ body {
     display: block;
     margin: 0 auto;
 
-  }
-  h3 {
-    text-align: $text-align;
-    font-size: 35px;
-  }
-
-  p {
-    text-align: $text-align;
-    margin: 0 auto;
-    width: 440px;
   }
 }
 
@@ -61,42 +63,43 @@ nav {
 }
 
 .signup-form {
-  display: inline-block;
+  max-width: 500px;
+    margin: 0 auto;
   form {
-  .name {
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    .name {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      input {
+        padding: 5px 10px;
+        border-radius: 5px;
+        width: 50%;
+        border: 2px solid lightgray;
+      }
+    }
     input {
       padding: 5px 10px;
-      border-radius: 5px;
-      margin: 5px;
+      border-radius: 6px;
+      margin-bottom: 10px;
       border: 2px solid lightgray;
-
     }
   }
-  .contact {
-  input {
-    padding: 5px 10px;
-    border-radius: 6px;
-    border: 2px solid lightgray;
-  }
-}
-}
-  form input[type=submit] {
+  input[type=submit] {
     border-width: 2px;
     border-color: purple;
     background-color: white;
     color: purple;
-    text-decoration: none !important;
+    text-decoration: none;
     padding: 0.5em;
     border-radius: 6px;
-    width: 6em;
+    width: 20em;
     text-align: $text-align;
     display: block;
     margin: 0 auto;
     cursor: pointer;
-   }
+  }
 }
 .contact {
   input {

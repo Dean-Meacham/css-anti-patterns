@@ -2,6 +2,18 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+p {
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+  margin-bottom: 20px;
+}
+
 .hero h1 {
   text-align: center;
   font-size: 200%;
@@ -14,15 +26,6 @@ body {
 .hero iframe {
   display: block;
   margin: 0 auto;
-}
-.hero h3 {
-  text-align: center;
-  font-size: 35px;
-}
-.hero p {
-  text-align: center;
-  margin: 0 auto;
-  width: 440px;
 }
 
 nav {
@@ -51,33 +54,39 @@ nav li .blue-button {
 }
 
 .signup-form {
-  display: inline-block;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.signup-form form {
+  display: flex;
+  flex-direction: column;
 }
 .signup-form form .name {
   display: flex;
   align-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .signup-form form .name input {
   padding: 5px 10px;
   border-radius: 5px;
-  margin: 5px;
+  width: 50%;
   border: 2px solid lightgray;
 }
-.signup-form form .contact input {
+.signup-form form input {
   padding: 5px 10px;
   border-radius: 6px;
+  margin-bottom: 10px;
   border: 2px solid lightgray;
 }
-.signup-form form input[type=submit] {
+.signup-form input[type=submit] {
   border-width: 2px;
   border-color: purple;
   background-color: white;
   color: purple;
-  text-decoration: none !important;
+  text-decoration: none;
   padding: 0.5em;
   border-radius: 6px;
-  width: 6em;
+  width: 20em;
   text-align: center;
   display: block;
   margin: 0 auto;
