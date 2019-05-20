@@ -7,13 +7,6 @@ h3 {
   font-size: 35px;
 }
 
-p {
-  text-align: center;
-  margin: 0 auto;
-  width: 440px;
-  margin-bottom: 20px;
-}
-
 .hero h1 {
   text-align: center;
   font-size: 200%;
@@ -53,9 +46,48 @@ nav li .blue-button {
   cursor: pointer;
 }
 
+.people p {
+  text-align: center;
+  margin: 0 auto;
+  width: 725px;
+  margin-bottom: 20px;
+}
+.people a {
+  color: purple;
+  display: block;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 1em;
+  text-decoration: none;
+}
+.people .groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.people .groups li {
+  list-style-type: none;
+}
+.people .groups li img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.people .groups li h4 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
 .signup-form {
   max-width: 500px;
   margin: 0 auto;
+}
+.signup-form p {
+  text-align: center;
+  margin: 0 auto;
+  width: 440px;
+  margin-bottom: 20px;
 }
 .signup-form form {
   display: flex;
@@ -91,15 +123,6 @@ nav li .blue-button {
   display: block;
   margin: 0 auto;
   cursor: pointer;
-}
-
-.contact input {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5px;
-  border-radius: 5px;
-  padding: 10px;
-  width: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
