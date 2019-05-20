@@ -9,6 +9,10 @@ h3 {
   font-size: 35px;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .hero {
   h1 {
     text-align: $text-align;
@@ -59,7 +63,7 @@ nav {
   p {
     text-align: $text-align;
     margin: 0 auto;
-    width: 725px;
+    width: 40em;
     margin-bottom: 20px;
   }
   a {
@@ -89,6 +93,24 @@ nav {
     }
   }
 }
+
+.student-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  h4, p {
+    padding-left: 30px;
+  }
+  h4 {
+    font-weight: bold;
+  }
+  p {
+    text-align: left;
+    width: 25em;
+  }
+}
+
+
 
 .signup-form {
   max-width: 500px;

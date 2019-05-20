@@ -7,6 +7,10 @@ h3 {
   font-size: 35px;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .hero h1 {
   text-align: center;
   font-size: 200%;
@@ -49,7 +53,7 @@ nav li .blue-button {
 .people p {
   text-align: center;
   margin: 0 auto;
-  width: 725px;
+  width: 40em;
   margin-bottom: 20px;
 }
 .people a {
@@ -77,6 +81,22 @@ nav li .blue-button {
   text-align: center;
   font-size: 1.5em;
   font-weight: 900;
+}
+
+.student-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.student-video h4, .student-video p {
+  padding-left: 30px;
+}
+.student-video h4 {
+  font-weight: bold;
+}
+.student-video p {
+  text-align: left;
+  width: 25em;
 }
 
 .signup-form {
