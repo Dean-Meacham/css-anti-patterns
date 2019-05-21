@@ -1,3 +1,5 @@
+/* Base styles */
+
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -10,6 +12,8 @@ h3 {
 ul {
   padding-left: 0;
 }
+
+/* Layout styles */
 
 .hero h1 {
   text-align: center;
@@ -144,5 +148,7 @@ nav li .blue-button {
   margin: 0 auto;
   cursor: pointer;
 }
+
+/* Block styles */
 
 /*# sourceMappingURL=style.css.map */
