@@ -2,39 +2,46 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 1.125rem;
 }
 
-h3 {
+body * {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
   text-align: center;
-  font-size: 35px;
 }
 
 ul {
   padding-left: 0;
 }
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+}
+
+hr {
+  border-bottom: 1px solid darkslategray;
+}
 
 /* Layout styles */
 
-.hero h1 {
-  text-align: center;
-  font-size: 200%;
-}
-.hero h2 {
-  text-align: center;
-  font-weight: 100;
-  font-size: 110%;
-}
-.hero iframe {
-  display: block;
-  margin: 0 auto;
+.kenzie__teams {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-nav {
+/* Block styles */
+
+.navbar {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-nav li {
+
+.nav__links {
   display: inline-block;
   margin-top: 0;
   margin-right: 12px;
@@ -42,99 +49,61 @@ nav li {
   margin-bottom: 0;
   text-decoration: underline;
 }
-nav li .blue-button {
-  background-color: blue;
-  text-decoration: none !important;
+.nav__links--blue-button a {
+  background-color: purple;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
-  width: 8em;
+  width: 9em;
   text-align: center;
   display: inline-block;
   cursor: pointer;
 }
 
-.people p {
-  text-align: center;
-  margin: 0 auto;
-  width: 40em;
-  margin-bottom: 20px;
-}
-.people a {
-  color: purple;
-  display: block;
-  text-align: center;
-  padding-bottom: 25px;
-  font-size: 1em;
-  text-decoration: none;
-}
-.people .groups {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.people .groups li {
-  list-style-type: none;
-}
-.people .groups li img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.people .groups li h4 {
-  text-align: center;
-  font-size: 1.5em;
-  font-weight: 900;
+.nav__links--blue-button:active {
+  transform: translateY(4px);
 }
 
-.student-video {
+.quotes {
   display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-.student-video h4, .student-video p {
-  padding-left: 30px;
-}
-.student-video h4 {
-  font-weight: bold;
-}
-.student-video p {
-  text-align: left;
-  width: 25em;
-}
-
-.signup-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-.signup-form p {
-  text-align: center;
-  margin: 0 auto;
-  width: 440px;
+  justify-content: space-around;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
-.signup-form form {
+
+.courses ul{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.signup-form form .name {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
+
+.course__date {
+  top: 50%;
+  left: 50%;
 }
-.signup-form form .name input {
-  padding: 5px 10px;
-  border-radius: 5px;
-  width: 50%;
-  border: 2px solid lightgray;
+
+.date {
+  height: 50px;
+  width: 75px;
+  text-align: center;
+  margin-left: 33%;
+  border: 1px solid darkslategray;
 }
-.signup-form form input {
-  padding: 5px 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  border: 2px solid lightgray;
+
+.month {
+  background-color: navy;
+  color: white;
+  text-transform: uppercase;
 }
-.signup-form input[type=submit] {
+
+.course__name {
+  text-align: center;
+}
+
+.courses button {
   border-width: 2px;
   border-color: purple;
   background-color: white;
@@ -149,6 +118,126 @@ nav li .blue-button {
   cursor: pointer;
 }
 
-/* Block styles */
+.compare__programs {
+  background-color: lightgrey;
+  height: 100px;
+}
+
+.compare__programs button {
+  border-width: 2px;
+  border-color: purple;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 20em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.people__link {
+  display: flex;
+  justify-content: center;
+}
+
+.kenzie__teams {
+  list-style-type: none;
+}
+.kenzie-team__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.kenzie-team__heading {
+  text-align: center;
+  font-weight: bold;
+}
+
+.student-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.student-video__content {
+  padding-left: 30px;
+  max-width: 40em;
+}
+.student-video__heading{
+  font-weight: bold;
+}
+.student-video__body {
+  text-align: left;
+}
+
+.signup {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero__heading {
+  text-align: center;
+}
+
+.hero__video {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.signup__body {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.signup__form {
+  margin: 0 auto;
+}
+
+.signup__fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup__fields--long {
+  flex-direction: column;
+}
+.signup__shortfield {
+  width: 50%;
+  padding: .75em;
+  border-radius: 6px;
+  margin: 20px 5px 5px 5px;
+  border: 2px solid lightgray;
+}
+
+.signup__longfield {
+  max-width: 100%;
+  padding: .75em;
+  border-radius: 6px;
+  margin: 5px;
+  border: 2px solid lightgray;
+}
+
+.signup input[type=submit] {
+  margin-top: 10px;
+  border-width: 2px;
+  border-color: purple;
+  background-color: white;
+  color: purple;
+  text-decoration: none;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 20em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
 
 /*# sourceMappingURL=style.css.map */
